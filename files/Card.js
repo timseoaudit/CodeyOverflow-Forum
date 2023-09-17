@@ -4,8 +4,10 @@ import Body from './Body';
 
 function Card(props) {
     return (
-        <Header />
-        <Body />
+        <div>
+            <Header profileImg={props.commentObject.profileImg} username={props.commentObject.username} />
+            <Body commnent={props.commentObject.commnent} />
+        </div>    
     );
 };
 
